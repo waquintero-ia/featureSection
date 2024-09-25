@@ -1,6 +1,9 @@
 const Card = () =>{
   return(
     <>
+      <article>
+
+      </article>
     </>
   )
 }

@@ -1,10 +1,23 @@
+:root {
+  --flow-space-title: 2.40vh;
+}
+
 body {
+  font-family: 'Poppins', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   padding-top: 12.75vh;
   padding-bottom: 11.70vh;
+}
+
+.main_container {
+  width: 82.94vw;
+}
+
+.flow__title > * + * {
+  margin-top: var(--flow-space-title, 1em);
 }
 
 @media (prefers-reduced-motion: no-preference) {

@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <main>
-        <div className="main_container">
+        <div className="main__container flow__main">
           <Title />
           <Card />
         </div>

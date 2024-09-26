@@ -1,6 +1,7 @@
 :root {
   --flow-space-title: 2.40vh;
   --flow-space-main: 11.40vh;
+  --flow-space-cards: 3.75vh;
 }
 
 body {
@@ -8,6 +9,7 @@ body {
   min-height: 100vh;
   padding-top: 12.75vh;
   padding-bottom: 11.70vh;
+  @apply bg-white-100;
 }
 
 .main__container {
@@ -22,6 +24,44 @@ body {
 
 .flow__main > * + * {
   margin-top: var(--flow-space-main, 1em);
+}
+
+.flow__cards > * + * {
+  margin-top: var(--flow-space-cards, 1em);
+}
+
+.card__container {
+  position: relative;
+  padding: 7.47vw;
+}
+
+.card__cyan::before,
+.card__red::before,
+.card__orange::before,
+.card__blue::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 0.53vh;
+}
+
+.card__cyan::before {
+  @apply bg-cyan;
+}
+
+.card__red::before {
+  @apply bg-red;
+}
+
+.card__orange::before {
+  @apply bg-orange;
+}
+
+.card__blue::before {
+  @apply bg-blue;
 }
 
 @media (prefers-reduced-motion: no-preference) {

@@ -1,6 +1,6 @@
 const Title = () =>{
   const composition_title = 'text-[24px] tracking-[0.17px] text-center text-grey-900 leading-[146%]'
-  const composition_description = 'font-regular text-[15px] tracking-[0.1px] leading-[167%]'
+  const composition_description = 'font-regular text-[15px] tracking-[0.1px] leading-[167%] opacity-50'
 
   return(
     <>

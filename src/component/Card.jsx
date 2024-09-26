@@ -29,7 +29,7 @@ const Card = () =>{
             <p className={`description ${composition_description}`}>
               Scans our talent network to create the optimal team for your project
             </p>
-            <picture className="absolute bottom-0 right-0">
+            <picture className="absolute block bottom-0 right-0">
               <img className="w-[15.2vw]" src="./images/icon-team-builder.svg" alt="Magnifying glass icon with an eye in the middle, observing." />
             </picture>
           </div>

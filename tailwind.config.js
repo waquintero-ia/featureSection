@@ -18,6 +18,9 @@ export default {
       boxShadow:{
         'card-shadow': '0 15px 30px -5px rgba(131, 166, 210, 0.5)',
       },
+      fontSize:{
+        'size-h1': 'clamp(1.5rem, 4vw , 2.25rem)'
+      },
     },
   },
   plugins: [],

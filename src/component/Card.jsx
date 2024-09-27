@@ -2,11 +2,12 @@ import card from '../data/card.json'
 import Content from './Content'
 
 const Card = () =>{
-  const composition_article = 'grid grid-row-4'
-  
+  const composition_article = 'grid'
+  const composition_article_xl = 'sm:w-[77.08vw]'
+
   return(
     <>
-      <article className={`flow__cards ${composition_article}`}>
+      <article className={`card flow__cards ${composition_article} ${composition_article_xl}`} >
         {
           card.map(card => (
             <Content 
@@ -17,6 +18,8 @@ const Card = () =>{
               alt={card.alt}
               color={card.color}
               position={card.position}
+              id={card.id}
+              dataType={card.dataType}
             />
           ))
         }

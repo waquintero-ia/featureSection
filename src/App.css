@@ -18,21 +18,35 @@ body {
   margin-right: auto;
 }
 
+.title {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .flow__title > * + * {
-  margin-top: var(--flow-space-title, 1em);
+  margin-top: clamp( 2vh, 1.5vh, var(--flow-space-title, 1em));
 }
 
 .flow__main > * + * {
-  margin-top: var(--flow-space-main, 1em);
+  margin-top: clamp(8vh, 4vh ,var(--flow-space-main, 1em)) ;
 }
 
 .flow__cards > * + * {
   margin-top: var(--flow-space-cards, 1em);
 }
 
+.flow__card__container > * + * {
+  margin-top: var(--flow-space-cards, 1em);
+}
+
 .card__container {
   position: relative;
-  padding: 7.47vw;
+  padding: clamp(1.75rem, 4vw , 2rem);
 }
 
 .card__cyan::before,
@@ -68,10 +82,42 @@ body {
 
 }
 
-@media (min-width: 80rem) {
-  body{
-    padding-top: 0;
-    padding-bottom: 0;
+@media (min-width: 40rem) {
+  body {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+  }
+
+  .card {
+    display: grid;
+    grid-template-areas: 
+    ".......... team ....."
+    "supervisor team  calculator"
+    "supervisor karma calculator"
+    ".......... karma ....";
+
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .card__container{
+    margin-top: 0;
+  }
+
+  #supervisor{grid-area: supervisor;}
+  #team{grid-area: team;}
+  #karma{grid-area: karma;}
+  #calculator{grid-area: calculator;}
+
+  [data-type="right"] {
+    margin-right: 2.08vw;
   }
   
+  [data-type="left"] {
+    margin-left: 2.08vw;
+  }
+  
+  [data-type="top"] {
+    margin-top: 2.08vw;
+  }
 }

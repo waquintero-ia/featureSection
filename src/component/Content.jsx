@@ -1,23 +1,28 @@
 import PropTypes from 'prop-types';
 
-const Content = ({title, description, image, alt, color, position}) => {
-  const composition_card__container = 'bg-white-100 col-span-1 w-[82.94vw] min-h-[33.28vh] rounded-[8px] shadow-card-shadow overflow-hidden'
-  const composition_card__description = 'relative h-full text-grey-900'
+const Content = ({title, description, image, alt, color, position, id, dataType}) => {
+  const composition_card__container = 'flex flex-col justify-between bg-white-100 w-[82.94vw] min-h-[33.28vh] rounded-[8px] shadow-card-shadow overflow-hidden'
+  const composition_card_container_sm = 'sm:w-[24.30vw] sm:min-h-[17.36vw]'
+  const composition_card__description = 'h-full text-grey-900'
   const composition_title = 'text-[20px] font-semibold'
   const composition_description = 'text-[13px] tracking-[0.09px] leading-[170%] opacity-50'
-  
+  const composition_image_container = 'flex justify-end items-end'
+  const composition_image = 'w-[57px]'
+
   return(
     <>
-      <div className={`card__container card__${color} ${composition_card__container} ${position}`}>
-        <div className={`card__description ${composition_card__description}`}>
+      <div className={`card__container flow__card__container card__${color} ${composition_card__container} ${position} ${composition_card_container_sm} `} id={id} data-type={dataType}>
+        <div className={`card__description${composition_card__description}`}>
           <h2 className={`title ${composition_title}`}>
-            {title}
+              {title}
           </h2>
           <p className={`description ${composition_description}`}>
             {description}
           </p>
-          <picture className="absolute bottom-0 right-0">
-            <img className="w-[15.2vw]" src={image} alt={alt} />
+        </div>
+        <div className={`image__container ${composition_image_container}`}>
+          <picture>
+            <img className={`image ${composition_image}`} src={image} alt={alt} />
           </picture>
         </div>
       </div>
@@ -32,6 +37,8 @@ Content.propTypes = {
   alt: PropTypes.string.isRequired,
   color: PropTypes.string.isRequired,
   position: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+  dataType: PropTypes.string.isRequired,
 };
 
 export default Content

@@ -5,7 +5,9 @@
     "image": "./images/icon-supervisor.svg",
     "alt": "Magnifying glass icon with an eye in the middle, observing",
     "color": "cyan",
-    "position": "col-span-1"
+    "position": "xl:col-span-1",
+    "id": "supervisor",
+    "dataType": "right"
   },
   {
     "title": "Team Builder",
@@ -13,7 +15,10 @@
     "image": "./images/icon-team-builder.svg",
     "alt": "litte house red wrapper by a browser",
     "color": "red",
-    "position": "col-span-2"
+    "position": "xl:col-span-2",
+    "id": "team",
+    "dataType": "bottom"
+
   },
   {
     "title": "Karma",
@@ -21,7 +26,9 @@
     "image": "./images/icon-karma.svg",
     "alt": "A lit lightbulb.",
     "color": "orange",
-    "position": "col-span-2"
+    "position": "xl:col-span-2",
+    "id": "karma",
+    "dataType": "top"
   },
   {
     "title": "Calculator",
@@ -29,7 +36,9 @@
     "image": "./images/icon-calculator.svg",
     "alt": "The monitor of an iMac",
     "color": "blue",
-    "position": "col-span-1"
+    "position": "xl:col-span-1",
+    "id": "calculator",
+    "dataType": "left"
   }
 
 ]

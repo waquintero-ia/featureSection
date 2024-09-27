@@ -4,8 +4,8 @@ const Content = ({title, description, image, alt, color, position, id, dataType}
   const composition_card__container = 'flex flex-col justify-between bg-white-100 w-[82.94vw] min-h-[33.28vh] rounded-[8px] shadow-card-shadow overflow-hidden'
   const composition_card_container_sm = 'sm:w-[24.30vw] sm:min-h-[17.36vw]'
   const composition_card__description = 'h-full text-grey-900'
-  const composition_title = 'text-[20px] font-semibold'
-  const composition_description = 'text-[13px] tracking-[0.09px] leading-[170%] opacity-50'
+  const composition_title = 'text-20 font-semibold'
+  const composition_description = 'text-13 tracking-[0.09px] leading-[170%] opacity-50'
   const composition_image_container = 'flex justify-end items-end'
   const composition_image = 'w-[57px]'
 

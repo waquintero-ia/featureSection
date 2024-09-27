@@ -19,7 +19,10 @@ export default {
         'card-shadow': '0 15px 30px -5px rgba(131, 166, 210, 0.5)',
       },
       fontSize:{
-        'size-h1': 'clamp(1.5rem, 4vw , 2.25rem)'
+        'size-h1': 'clamp(1.5rem, 4vw , 2.25rem)',
+        20: '1.25rem',
+        15: '0.9375rem',
+        13: '0.8125rem',
       },
     },
   },

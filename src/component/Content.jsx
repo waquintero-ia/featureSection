@@ -22,7 +22,7 @@ const Content = ({title, description, image, alt, color, position, id, dataType}
         </div>
         <div className={`image__container ${composition_image_container}`}>
           <picture>
-            <img className={`image ${composition_image}`} src={image} alt={alt} />
+            <img className={`image ${composition_image}`} src={image} alt={alt} loading='lazy' decoding='async'/>
           </picture>
         </div>
       </div>
